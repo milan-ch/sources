@@ -1,0 +1,80 @@
+.effectDueToLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+.oneOffAndOngoingHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+  background-color: rgb(245, 245, 245);
+  justify-items: center;
+}
+
+.oneOffItemsLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.fontWeight400 {
+  font-weight: 400;
+}
+
+.ongoingCostsLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+
+.ongoingIncomeHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+  background-color: rgb(245, 245, 245);
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.ongoingIncomeLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.projectRiskHeader {
+  display: grid;
+  grid-template-columns: 3fr 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+  justify-items: center;
+}
+
+.projectRiskLayout {
+  display: grid;
+  grid-template-columns: 3fr 1fr 4fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+}

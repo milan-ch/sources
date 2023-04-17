@@ -1,0 +1,28 @@
+.headerMarketOverview {
+  display: grid;
+  grid-template-columns: minmax(105px, 2fr) repeat(2, minmax(155px, 3fr)) minmax(55px, 1fr) minmax(105px, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+  justify-items: center;
+}
+
+.subHeaderMarketOverview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(110px, 2fr)) repeat(5, minmax(50px, 1fr)) minmax(100px, 2fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+}
+
+.marketRentLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0;
+}
+
+.noHover:hover {
+  background-color: transparent !important;
+}

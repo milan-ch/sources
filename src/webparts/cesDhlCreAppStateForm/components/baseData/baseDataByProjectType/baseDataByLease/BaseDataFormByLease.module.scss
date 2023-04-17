@@ -1,0 +1,127 @@
+
+@mixin grid-columns($start, $span) {
+	grid-column: #{$start} / span #{$span};
+}
+
+@mixin currentHeader-grid-properties {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(100px, 2fr)) minmax(50px, 1fr) minmax(110px, 2fr) repeat(6, minmax(50px, 1fr)) 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+}
+
+.currentHeader {
+	@include currentHeader-grid-properties;
+
+	justify-items: center;
+	padding-top: 10px;
+
+	// Owned / lease expiration
+	> label:nth-child(3) {
+		@include grid-columns(3, 2);
+	}
+
+	// Space (m²)
+	> label:nth-child(4) {
+		@include grid-columns(5, 3);
+	}
+
+	// Rental cost
+	> label:nth-child(5) {
+		@include grid-columns(8, 3);
+	}
+}
+
+.currentSubHeader {
+	@include currentHeader-grid-properties;
+}
+
+.currentTotal {
+	@include currentHeader-grid-properties;
+
+	// Button: Add another location
+	> button:first-child {
+		@include grid-columns(1, 3);
+	}
+}
+
+.currentSubLabel {
+	text-align: center;
+	align-self: center;
+	font-weight: 400;
+}
+
+.currentSubLabelBold {
+	text-align: center;
+	align-self: center;
+}
+
+.ownedCheckBox {
+	align-self: center;
+	justify-self: center;
+}
+
+.proposedHeader {
+	display: grid;
+	grid-template-columns: minmax(110px, 2fr) minmax(220px, 5fr) minmax(220px, 4fr) minmax(160px, 2fr) 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+	justify-items: center;
+	align-items: center;
+}
+
+.proposedSubHeader {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(110px, 2fr)) repeat(8, minmax(50px, 1fr)) 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+}
+
+.proposedTotal {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(110px, 2fr)) repeat(8, minmax(50px, 1fr)) 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+}
+
+.proposedTotal > button:first-child {
+	grid-column: 1 / span 3;
+}
+
+.differenceSubHeader {
+	display: grid;
+	grid-template-columns: 1fr minmax(150px, 6fr) repeat(6, minmax(50px, 1fr)) repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+	padding-left: 10px;
+}
+
+.differenceHeader {
+	display: grid;
+	grid-template-columns: 1fr minmax(165px, 6fr) minmax(210px, 4fr) minmax(105px, 2fr) repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 0;
+	justify-items: center;
+	padding-top: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+	-moz-appearance: textfield; /* Firefox */
+}
+
+.noHover:hover {
+	background-color: transparent !important;
+}

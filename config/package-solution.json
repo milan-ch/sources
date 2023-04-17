@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "CEA DHL CreAppState FORM",
+    "id": "10de174a-7b7b-40ed-ac50-f925fdfb3b52",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "CES DHL CREAppState FORM description"
+      },
+      "longDescription": {
+        "default": "CES DHL CREAppState FORM description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ces-dhl-cre-app-state-form Feature",
+        "description": "The feature that activates elements of the ces-dhl-cre-app-state-form solution.",
+        "id": "25bcc71d-64bf-4464-8032-c43db9a1237d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cea-dhl-creappstate-form.sppkg"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "ces-dhl-cre-app-state-form",
+    "libraryId": "10de174a-7b7b-40ed-ac50-f925fdfb3b52",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "CES DHL CREAppState FORM",
+    "solutionShortDescription": "CES DHL CREAppState FORM description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
